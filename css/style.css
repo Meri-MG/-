@@ -424,10 +424,20 @@ form p {
 	align-items: center;
 	text-transform: uppercase;
 	font-weight: bold;
+	font-size: 11px;
 }
 
 .home-wrapper .grey {
 	color: var(--common-grey-color);
+}
+
+#filter {
+	background-color: #ebebed;
+	border: 1px solid var(--common-grey-color);
+	padding: 8px;
+	border-radius: 5px;
+	width: 30px;
+	cursor: pointer;
 }
 
 .form-div {
