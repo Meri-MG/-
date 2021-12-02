@@ -65,7 +65,8 @@
             ><span class="right-span"> > </span>
           </div>
           <hr />
-          <article>
+          <div class="articles-wrapper">
+          <article id="right-article">
             <h3>travel</h3>
             <h4>Article title</h4>
             <p>
@@ -84,12 +85,13 @@
             <i class="far fa-clock"></i><small>2 min ago</small>
           </article>
         </div>
+        </div>
       </section>
       <section class="container" id="trending">
         <h2>trending</h2>
         <div class="cards">
-          <div class="card-wrapper">
-            <img src="images/Image1.png" alt="valley" />
+          <div class="card-wrapper" id="card-wrapper-first">
+            <img src="images/Image1.png" alt="valley" class="valley" />
             <div class="cards-content">
               <h4>Dolore magna aliqua</h4>
               <p>
@@ -110,7 +112,7 @@
               <i class="far fa-clock"></i><small>1h ago</small>
             </div>
           </div>
-          <div class="card-wrapper">
+          <div class="card-wrapper snowboarding">
             <img src="images/image3.png" alt="" />
             <div class="cards-content">
               <h4>Morbi eleifend a libero</h4>
@@ -140,8 +142,8 @@
           </div>
           </div>
           <div class="big-card">
-            <img src="images/imageBG2.png" alt="Forest" />
-            <div class="big-card-content">
+            <img src="images/imageBG2.png" alt="Forest"  />
+            <div class="big-card-content forest">
               <h2>Travel</h2>
             <h3>Large article title</h3>
             <p>Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam.</p>
@@ -150,7 +152,7 @@
           </div>
         </div>
         <div class="small-cards">
-          <div>
+          <div class="elephant">
             <img src="images/image4.png" alt="elephant" />
             <h4>small title</h4>
             <small><i class="far fa-clock"></i>3h ago by <a href="">Worldnews</a></small>
@@ -160,7 +162,7 @@
             <h4>small title</h4>
             <small><i class="far fa-clock"></i>4h ago by <a href="">Days</a></small>
           </div>
-          <div>
+          <div class="mountRoad">
             <img src="images/image6.png" alt="mountain Road" />
             <h4>small title</h4>
             <small><i class="far fa-clock"></i>3h ago by <a href="">Monica</a></small>
@@ -171,6 +173,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-links">
+        <div class="nav-links-logo">
         <a href="" class="footer-logo">LOGO</a>
         <ul>
           <li><a href="">home</a></li>
@@ -190,6 +193,8 @@
           <li><a href="">integrations</a></li>
           <li><a href="">careers</a></li>
         </ul>
+      </div>
+      <div class="form-icons">
         <form>
           <div id="input-container">
             <input type="email" placeholder="Email" id="input" />
@@ -225,6 +230,7 @@
             <a href=""><i></i></a>
           </div>
         </div>
+      </div>
       </div>
     </footer>
   </body>

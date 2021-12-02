@@ -8,6 +8,7 @@
 
 body {
     background-color: var(--bg-color);
+		max-width: 1440px;
 }
 
 /* header styles */
@@ -70,12 +71,17 @@ nav ul li a {
 	top: 170px;
 	left: 50px;
 	max-width: 560px;
+	width: 100%;
 	color: var(--common-white-color);
 }
 
 .headline-content p, h3, hr {
 	margin: 30px 0;
 	line-height: 26px;
+}
+
+.headline-content hr {
+	border-top: 1px solid var(--common-white-color);
 }
 
 .headline-content button,
@@ -124,6 +130,7 @@ h1, h2, h3 {
 
 .left-span {
 	margin-left: 60%;
+	margin-right: 30px;
 }
 
 .more-news-wrapper h3 {
@@ -164,7 +171,7 @@ small {
 }
 
 .card-wrapper {
-	max-width: 360px;
+	width: 360px;
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
@@ -207,6 +214,7 @@ small {
 }
 
 .images-wrapper-div {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -217,7 +225,12 @@ small {
 	position: relative;
 }
 
+.big-card img {
+	width: 100%;
+}
+
 .big-card-content h2 {
+	color: var(--common-white-color);
 	margin-bottom: 200px;
 }
 
@@ -259,6 +272,16 @@ small {
 	padding: 50px 0;
 	justify-content: space-between;
 }
+
+.nav-links-logo {
+	display: flex;
+}
+
+.form-icons {
+	display: flex;
+	align-items: flex-start;
+}
+
 .footer-links ul {
 	margin-left: 60px;
 }
@@ -335,7 +358,7 @@ form p {
 
 /* Desktop 2 different styles  */
 
-.section1, .section2, .footer {
+.section-avatar, .section2, .footer {
 	max-width: 1440px;
 	margin: 0 auto;
 	display: -webkit-box;
@@ -355,11 +378,11 @@ form p {
 }
 
 .bg-image {
-	background-image: linear-gradient(to bottom, #bbccdd2e, #30516c), url(../images/image.png);
+	background-image: url(../images/Image.png);
 	background-repeat: no-repeat;
 	max-width: 580px;
 	width: 100%;
-	height: 500px;
+	height: 400px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -373,15 +396,14 @@ form p {
 	-webkit-box-align: center;
 			-ms-flex-align: center;
 					align-items: center;
-	border-radius: 5px;
+	
 }
 
-.content{
+.content {
 	display: flex;
 	flex-direction: column;
-	max-width: 360px;
+	max-width: 100%;
 	height: 190px;
-	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -456,7 +478,7 @@ form p {
 					align-items: flex-start;
 } 
 
-.section1 {
+.section-avatar {
 	background-color: var(--common-white-color);
 	border-radius: 5px;
 }
@@ -530,6 +552,138 @@ h2 {
 	margin-bottom: 150px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
+/* desktop 1 tablet styles */
+	.world-news {
+		flex-direction: column;
+	}
 
+	.world-news img {
+		width: 100%;
+	}
+
+	.headline-content h1, h3 {
+		font-size: 24px;
+	}
+
+	.headline-content {
+		max-width: 70%;
+	}
+
+	.more-news-wrapper {
+		flex-direction: row;
+		padding: 0;
+	}
+
+	.articles-wrapper {
+		display: flex;
+	}
+	#right-article {
+		margin-right: 40px;
+	}
+
+	.snowboarding {
+		display: none;
+	}
+
+	.card-wrapper {
+		width: 100%;
+	}
+
+	.card-wrapper img {
+		width: 100%;
+	}
+
+	#card-wrapper-first {
+		margin-right: 40px;
+	}
+
+	.images-wrapper-div {
+		flex-direction: column;
+	}
+
+	.big-cards {
+		width: 100%;
+	}
+
+	.forest h2 {
+		margin-bottom: 150px;
+	}
+
+	.small-cards {
+		display: flex;
+		width: 100%;
+	}
+
+	.small-cards div {
+		width: 100%;
+	}
+
+	.small-cards div img {
+		width: 100%;
+	}
+
+	.mountRoad {
+		display: none;
+	}
+
+	.small-cards .elephant {
+		margin-right: 40px;
+	}
+
+	.happening-now {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.footer-links {
+		flex-direction: column;
+	}
+
+	.nav-links-logo {
+		justify-content: space-between;
+	}
+
+	.nav-links-logo a {
+		width: 30%;
+	}
+
+	.form-icons {
+		margin-top: 40px;
+		justify-content: space-between;
+	}
+
+	.form-icons form {
+		margin-left: 0;
+	}
+
+	#input-container {
+		width: 300px;
+	}
+
+	.icons-list {
+		align-self: flex-end;
+	}
+}
+
+
+@media (max-width: 1050px) {
+	/* desktop 1 tablet styles */
+	.section-avatar {
+		flex-direction: column;
+	}
+
+	.avatar-wrapper {
+		width: 100%;
+	}
+
+	.bg-image {
+		max-width: 1296px;
+		background-position: contain;
+		background-size: 100%;
+	}
+
+	.form-wrapper {
+		width: 100%;
+	}	
 }
