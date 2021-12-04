@@ -11,41 +11,82 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
     <header>
       <div>
-        <a href="#" class="logo">LOGO</a>
+        <a href="world-news" class="logo">LOGO</a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="">HOME</a></li>
+      <nav class="nav">
+        <ul class="main-nav">
+          <li><a href="index.html">HOME</a></li>
           <li><a href="discovery.html">DISCOVERY</a></li>
-          <li><a href="">PHOTOS</a></li>
-          <li><a href="">CONTACT</a></li>
+          <li><a href="#trending">PHOTOS</a></li>
+          <li><a href="#footer">CONTACT</a></li>
           <li>
-            <a href=""><img src="images/tiny-img1.png" alt="profile" /></a>
+            <a href="api.html" id="avatar-girl"><img src="images/tiny-img1.png" alt="profile" /></a>
           </li>
         </ul>
-        <img src="" alt="" />
-        <ul class="mobile-links">
-          <li><a href="about.html">HOME</a></li>
-          <li><a href="">DISCOVERY</a></li>
-          <li><a href="">PHOTOS</a></li>
-          <li><a href="">CONTACT</a></li>
-          <li><a href="">PROFILE</a></li>
-        </ul>
-        <div class="hamburger">
+        <div id="mobile-menu">
+        <div id="hamburger">
           <div class="bar line-1"></div>
-          <div class="bar line-2"></div>
+          <div class="bar line-2 short"></div>
           <div class="bar line-3"></div>
         </div>
+        <div>
+          <a href="#world-news" id="logo">LOGO</a>
+        </div>
+        <div>
+          <a href="api.html" id="avatar-girl"><img src="images/tiny-img1.png" alt="profile" /></a>
+        </div>
+      </div>
+      <div class="mobile-background">
+      <ul id="mobile-links">
+        <li class="mobile-nav-link" id="mobile-logo"><a href="#world-news">LOGO</a></li>
+        <li class="mobile-nav-link"><a href="index.html"><img src='images/home.png' alt=""/>HOME</a></li>
+        <li class="mobile-nav-link"><a href="discovery.html"><img src="images/discover.svg" alt=""/>DISCOVERY</a></li>
+        <li class="mobile-nav-link"><a href="#trending"><img src="images/photos.svg" alt=""/>PHOTOS</a></li>
+        <li class="mobile-nav-link"><a href="#footer"><img src="images/mail.svg" alt=""/>CONTACT</a></li>
+        <li class="mobile-nav-link"><a href="api.html"><img src="images/tiny-img1.png" id="profile" alt=""/>PROFILE</a></li>
+      </ul>
+      <div id="mobile-footer">
+        <ul>
+          <li><a href="#">about</a></li>
+          <li><a href="#">help</a></li>
+          <li><a href="#">terms</a></li>
+          <li><a href="#">guidelines</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">testimonials</a></li>
+          <li><a href="#">advertise</a></li>
+          <li><a href="#">integrations</a></li>
+          <li><a href="#">careers</a></li>
+        </ul>
+        <ul id="mobile-icons-list">
+          <li class="instagram">
+            <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fas fa-globe-americas"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
       </nav>
     </header>
-    <main>
-      <section class="world-news">
+    <main class='main'>
+      <section class="world-news" id="world-news">
         <img src="images/mainImg.png" alt="Image Of Mountain Road" />
         <div class="headline-content">
           <h1>World news</h1>
@@ -61,8 +102,10 @@
         <div class="more-news-wrapper">
           <div class="spans-wrapper">
             <h2>more news</h2>
+            <div>
             <span class="left-span"> < </span
             ><span class="right-span"> > </span>
+          </div>
           </div>
           <hr />
           <div class="articles-wrapper">
@@ -128,7 +171,10 @@
       <section class="container happening-now">
         <div class="title">
         <h2>happening now</h2>
-        <span class="left-span"> < </span><span class="right-span"> > </span>
+        <div>
+          <span class="left-span"> < </span
+          ><span class="right-span"> > </span>
+        </div>
       </div>
         <div class="images-wrapper-div">
         <div class="big-cards">
@@ -171,7 +217,7 @@
       </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container footer-links">
         <div class="nav-links-logo">
         <a href="" class="footer-logo">LOGO</a>
@@ -217,21 +263,9 @@
               ><i class="fas fa-globe-americas"></i
             ></a>
           </div>
-          <div>
-            <a href=""><i></i></a>
-          </div>
-          <div>
-            <a href=""><i></i></a>
-          </div>
-          <div>
-            <a href=""><i></i></a>
-          </div>
-          <div>
-            <a href=""><i></i></a>
-          </div>
-        </div>
       </div>
       </div>
     </footer>
+    <script src='JS/navigation.js'></script>
   </body>
 </html>
