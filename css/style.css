@@ -17,6 +17,7 @@ body {
 	background-color: var(--bg-color);
 	max-width: 1440px;
 	font-family: 'Helvetica', sans-serif;
+	margin: 0 auto;
 }
 
 .d-flex {
@@ -154,10 +155,16 @@ h1, h2, h3 {
 .left-span {
 	margin-right: 30px;
 	opacity: 0.5;
+	cursor: pointer;
+}
+
+.left-span:hover {
+	opacity: 1;
 }
 
 .right-span {
 	opacity: 1;
+	cursor: pointer;
 }
 
 .more-news-wrapper h3 {

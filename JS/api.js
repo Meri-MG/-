@@ -17,6 +17,7 @@ const getInfo =  async (id) => {
 const createCard = async (info) => {
     const cardHTML = `<div class="card">
     <div class=id-info">
+        <h4>Post #${info.id}</h4>
         <h2>${info.title}</h2>
         <p>${info.body}</p>
     </div>

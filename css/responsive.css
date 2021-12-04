@@ -144,6 +144,10 @@
 	
 @media (max-width: 1050px) {
 	/* desktop 1 tablet styles */
+	.big-card-content p {
+		max-width: 700px;
+	}
+
 	.section-avatar {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
